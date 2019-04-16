@@ -50,6 +50,17 @@ namespace WindowsFormsApp7
 
         private void button3_Click(object sender, EventArgs e)
         {
+            double resistor1 = double.Parse(textBox10.Text);
+            double resistor2 = double.Parse(textBox7.Text);
+            double resistor3 = double.Parse(textBox6.Text);
+            double resistor4 = double.Parse(textBox9.Text);
+
+            double totalresistance = 1.0 / (1.0 / resistor1 + 1.0 / resistor2 + 1.0 / resistor3 + 1.0 / resistor4);
+            MessageBox.Show("total resistance=" + totalresistance.ToString("0.00") + "ohms");
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
 
         }
     }
