@@ -47,5 +47,10 @@ namespace WindowsFormsApp7
             double totalresistance = resistor1 + resistor2 + resistor3 + resistor4;
             MessageBox.Show("total resistance =" + totalresistance.ToString("0.00") + "ohms");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
